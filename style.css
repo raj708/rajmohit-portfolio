@@ -25,6 +25,7 @@ nav {
   justify-content: space-evenly;
   align-items: center;
   background: #edf2fc;
+  z-index: 1;
 }
 
 nav ul {
@@ -78,9 +79,9 @@ nav ul li a:hover {
 
   .navbar {
     position: absolute;
-    top: 185px;
+    top: 52px;
     right: -100%;
-    width: 270px;
+    width: 280px;
     height: 100vh;
     display: flex;
     flex-direction: column;
