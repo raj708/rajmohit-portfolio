@@ -14,6 +14,8 @@ function toogle() {
   //dynamic-section
   let dynamicText = document.getElementById("dynamic-first-text");
   let span=document.querySelectorAll(".name");
+  //home-section
+  let main_img=document.getElementById("main_img");
   //for all text in dark mode
   let Alltext=document.getElementsByClassName("darkModeText");
   //project-section
@@ -44,7 +46,7 @@ function toogle() {
   }
     dynamicText.style.color="";
     
-    
+    main_img.style.filter="";
    //project Slecttion
   projectSec.style.background="";
   
@@ -100,7 +102,7 @@ function toogle() {
       span[i].style.setProperty('--beforeColor','rgb(23 23 23)')
     }
     dynamicText.style.color="white";
-    
+    main_img.style.filter="drop-shadow(10px 4px 6px white)";
     menuButton.style.color="#fff";
     //project section
     projectSec.style.background="rgba(18,18,18)"
