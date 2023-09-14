@@ -28,6 +28,7 @@ function toogle() {
   //about me Section
   let aboutMeSec=document.getElementById("aboutUs");
   let aboutUs_card=document.getElementById("aboutUs_card");
+  let aboutUsSummery_card=document.getElementById("aboutUsSummery_card");
 
   //contactUs section
   let inputTag = document.getElementsByClassName("inputClass");
@@ -72,6 +73,7 @@ function toogle() {
   //about
   aboutMeSec.style.background="";
   aboutUs_card.style.background="";
+  aboutUsSummery_card.style.background="";
 
   //contactUs section
   for (let j = 0; j < inputTag.length; j++) {
@@ -133,6 +135,7 @@ function toogle() {
     //about
     aboutMeSec.style.background="rgba(18,18,18)";
     aboutUs_card.style.background="#333";
+    aboutUsSummery_card.style.background="#333";
     //contactUs 
     for (let j = 0; j < inputTag.length; j++) {
       inputTag[j].style.background = "rgb(23 23 23)";

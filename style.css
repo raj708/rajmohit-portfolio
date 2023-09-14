@@ -26,6 +26,7 @@ nav {
   align-items: center;
   background: #edf2fc;
   z-index: 1;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
 }
 
 nav ul {
@@ -79,7 +80,7 @@ nav ul li a:hover {
 
   .navbar {
     position: absolute;
-    top: 52px;
+    top: 62px;
     right: -100%;
     width: 280px;
     height: 100vh;
@@ -275,7 +276,7 @@ img.moon {
 
 /* project */
 #project {
-  background-color: #ececec;
+  background-color: #E7E9EB;
   
 }
 .project{
@@ -455,7 +456,7 @@ img.moon {
 
 /* about-us section */
 #aboutUs  {
-  background-color: #ececec;
+  background-color: #E7E9EB;
 
   padding-top: 2.5rem;
   padding-bottom: 3rem;
@@ -520,8 +521,9 @@ font-family:  'Roboto', sans-serif;
 
 }
 .about .bothbox .about-box2 {
-
-  width: 50rem;
+  width: 50vw;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+  background: white;
 }
 .about .bothbox .about-box2 p{
 text-align: start;
@@ -529,7 +531,7 @@ text-align: start;
  color: #444242;
  font-family:  'Roboto', sans-serif;
  line-height: 1.6;
- padding: 0px 25px;
+ padding: 15px 25px;
 
 }
 /* contactUs section */
@@ -574,6 +576,7 @@ border: none;
 }
 .bothbox .firstBox .inputClass {
   border: 0.3px solid white;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
 }
 textarea {
 display: block;
@@ -593,6 +596,7 @@ padding: 10px 18px;
 border-radius: 8px;
 border: 1px solid transparent;
 display: inline-block;
+box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
 
 }
 .bothbox .firstBox .btn:hover {
@@ -654,6 +658,10 @@ footer #social-media{
 
 /* small device */
 @media screen and (max-width: 768px) {
+  /* aboutUs section */
+  .about .bothbox .about-box2 {
+    width: 90vw;
+  }
   .wrapper .first-text{
     font-size: 22px;
     margin-top: 27px;
@@ -724,7 +732,7 @@ footer #social-media{
 }
 
 @media only screen and (min-width: 576px) {
-
+  
  /* contactUs section */
   .bothbox .firstBox .inputClass {
     width: 50vw;
