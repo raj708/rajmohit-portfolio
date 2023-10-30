@@ -25,6 +25,7 @@ function toogle() {
   let card_desc=document.querySelectorAll(".card_desc")
   let p_linkButton =document.getElementsByClassName("card_link")
   let boxAll=document.getElementsByClassName("boxAall");
+  let greenBorder=document.getElementsByClassName("greenBorder");
   //about me Section
   let aboutMeSec=document.getElementById("aboutUs");
   let aboutUs_card=document.getElementById("aboutUs_card");
@@ -67,6 +68,9 @@ function toogle() {
     head_title[i].style.color="";
     head_title[i].style.background="";
     
+  }
+  for (let j = 0; j < greenBorder.length; j++) {
+    greenBorder[j].style.border = "";
   }
 //  skills
   for (let i = 0; i < Alltext.length; i++) {
@@ -133,6 +137,9 @@ function toogle() {
       head_title[i].style.background="#333";
       
     }
+    for (let j = 0; j < greenBorder.length; j++) {
+      greenBorder[j].style.border = "1px solid green";
+    }
     //skills
     for (let i = 0; i < Alltext.length; i++) {
       Alltext[i].style.color="white";
@@ -145,7 +152,7 @@ function toogle() {
     //contactUs 
     for (let j = 0; j < inputTag.length; j++) {
       inputTag[j].style.background = "rgb(23 23 23)";
-      inputTag[j].style.border = "2px solid green";
+      inputTag[j].style.border = "1px solid green";
     }
 
     social[0].innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
